@@ -1,14 +1,64 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título de tu página</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo de los Hongos</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <header>
+    <!-- Encabezado -->
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Mundo de los Hongos</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- Aquí va el contenido de tu página -->
-<p>primera linea</p>
-<p>segunda linea</p>
+  <div id="container-home" class="container mt-5">
+    <!-- Contenido -->
+    <div class="row">
+      <div class="col-md-6 bg-dark text-white">
+        <h2>Descripción del Mundo de los Hongos</h2>
+        <p>¡Bienvenido al fascinante mundo de los hongos! Descubre su diversidad, sus misterios y su importancia en la naturaleza.</p>
+        <p>Aquí encontrarás información sobre hongos tóxicos, comestibles, medicinales y mucho más.</p>
+        <p>Sumérgete en este viaje único y fascinante.</p>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col">
+            <img src="https://c7.alamy.com/compes/2f36730/pholiota-escamosa-un-hongo-saprotrofico-comun-que-se-alimenta-de-madera-debilitada-o-muerta-se-informa-que-es-venenoso-para-el-consumo-humano-2f36730.jpg" class="img-fluid" alt="Hongos Tóxicos">
+            <a href="#" class="btn btn-primary btn-block mt-3">Hongos Tóxicos</a>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col">
+            <img src="https://c7.alamy.com/compes/k24y6x/hermoso-paisaje-con-setas-comestibles-en-cesta-de-mimbre-en-bosque-setas-blancas-boletus-edulis-la-recoleccion-de-setas-k24y6x.jpg" class="img-fluid" alt="Hongos Comestibles">
+            <a href="comestibles.html" class="btn btn-primary btn-block mt-3">Hongos Comestibles</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer-contacto" class="mt-5 text-center">
+    <!-- Pie de página aquí -->
+    <p>Equipo 15 - Comisión 24109 - Codo A Codo</p>
+        <p>Maxi</p>
+        <p>Tyno</p>
+        <p>Maribel</p>
+        <p>Ari</p>
+        <p>Tubi</p>
+    <p>Contacto: info@mundo-hongos.com</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
