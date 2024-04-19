@@ -4,14 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mundo de los Hongos</title>
+  <script src="https://kit.fontawesome.com/34242d1290.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/estilocomestibles.css">
+  <link rel="stylesheet" href="./css/estilocomestibles.css">
 </head>
 <body>
   <header>
     <!-- Encabezado -->
     <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Mundo de los Hongos</a>
+      <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-earth"></i>
+        <span>Mundo de los Hongos</span>
+      </a>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
@@ -19,7 +23,7 @@
       </ul>
     </nav>
   </header>
-
+<main>
   <div id="container-home" class="container">
     <!-- Contenido -->
     <div class="row row-cols-1 row-cols-md-3">
@@ -27,27 +31,28 @@
         <div class="col md-4 mb-3"><!-- col 1 -->
         <div class="card h-100">
             
-                      <img src="assets/img/portobello.jpg" class="card-img-top" alt="...">
+                      <img src="./assets/img/portobello.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Portobello</h5>
                         <p class="card-text">Se caracteriza por su gran tamaño y su distintivo sombrero carnoso y oscuro, que puede medir hasta 15 centímetros de diámetro.</p>
                       </div>
                       <div class="card-footer">
-                      <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#exampleModal"data-button="Portobello"> Ver mas info</a>
+                      <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#ModalPortobello"> Ver mas info</a>
                     </div>
         </div>
         </div>
-        
+
+
         <div class="col md-4 mb-3"><!-- col 2 -->
           <div class="card h-100">
                 
-                          <img src="assets/img/cremini.jpg" class="card-img-top" alt="...">
+                          <img src="./assets/img/cremini.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">Cremini</h5>
                             <p class="card-text"> Similar al champiñón blanco, pero más oscuro y de sabor más intenso. También se le conoce como "champiñón marrón".</p>
                           </div>
                           <div class="card-footer">
-                            <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#exampleModal"data-button="Cremini"> Ver mas info</a>
+                            <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#ModalCremini"data-button="Cremini"> Ver mas info</a>
                         </div>
         </div>
         </div>
@@ -55,13 +60,13 @@
         <div class="col md-4 mb-3"><!-- col 3 -->
           <div class="card h-100">
                 
-                          <img src="assets/img/shiitake.jpg" class="card-img-top" alt="...">
+                          <img src="./assets/img/shiitake.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">Shiitake</h5>
                             <p class="card-text">Posee un sombrero grande y carnoso, de color marrón oscuro.</p>
                           </div>
                           <div class="card-footer">
-                            <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#exampleModal"data-button="Shiitake"> Ver mas info</a>
+                            <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#ModalShiitake"data-button="Shiitake"> Ver mas info</a>
                         </div>
         </div>
         </div>
@@ -70,13 +75,13 @@
         <div class="col md-4 mb-3"><!-- col 1 -->
           <div class="card h-100">
                 
-                          <img src="assets/img/champiniones.jpg" class="card-img-top" alt="...">
+                          <img src="./assets/img/champiniones.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">Champiniones</h5>
                             <p class="card-text">También conocido como champiñón blanco y se caracteriza por su sombrero redondeado y blanco, con una textura firme y un sabor suave y terroso.</p>
                           </div>
                           <div class="card-footer">
-                            <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#exampleModal"data-button="Champiñón"> Ver mas info</a>
+                            <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#ModalChampinion"data-button="Champiñón"> Ver mas info</a>
                         </div>
         </div>
         </div>
@@ -86,15 +91,18 @@
     </div>
   </div>
 
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+  <!-- primer modal -->
+
+  <div class="modal fade" id="ModalPortobello" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalTitle">Título del modal</h5>
+          <h5 class="modal-title" id="modalTitle">Portobello</h5>
           
         </div>
         <div class="modal-body">
-            <p id="modalContent">Contenido del modal...</p>
+            <p id="modalContent">Contenido de portobello...</p>
           </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -103,8 +111,61 @@
     </div>
   </div>
 
+  <!-- segundo modal -->
 
+  <div class="modal fade" id="ModalCremini" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle">Cremini</h5>
+          
+        </div>
+        <div class="modal-body">
+            <p id="modalContent">Contenido de cremini...</p>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- tercer modal -->
+  <div class="modal fade" id="ModalShiitake" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle">Shiitake</h5>
+          
+        </div>
+        <div class="modal-body">
+            <p id="modalContent">Contenido de shiitake...</p>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- cuarto modal -->
+  <div class="modal fade" id="ModalChampinion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle">Champiñion</h5>
+          
+        </div>
+        <div class="modal-body">
+            <p id="modalContent">Contenido de champinion...</p>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
 
   
 
@@ -123,23 +184,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
-  <script>
-    // Captura el evento de clic en los botones que abren el modal
-    document.querySelectorAll('[data-toggle="modal"]').forEach(button => {
-      button.addEventListener('click', function(event) {
-        // Obtiene el valor del atributo de datos personalizados que identifica qué botón fue presionado
-        const buttonType = this.getAttribute('data-button');
-        
-        // Modifica el contenido del modal según el botón que fue presionado
-        
-        document.getElementById('modalTitle').innerText = `${buttonType}`;
-        
-        document.getElementById('modalContent').innerText = `${buttonType}`;
-
-
-      });
-    });
-  </script>
+  
 
 
 
