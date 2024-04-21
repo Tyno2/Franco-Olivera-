@@ -4,46 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mundo de los Hongos</title>
+  <script src="https://kit.fontawesome.com/34242d1290.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/estilocomestibles.css">
- 
 </head>
 <body>
-  <!--Encabezado-->
-  <div class="nav-bar">
+
+  <!--Encabezado con un logo de forma de tierra,nombre, boton ☰ y una lista[Inicio-Acerca de-Codo a codo- Contacto]-->
+<div class="nav-bar">
     <div class="nav-container">
         <div class="brand">
           <a class="navbar-brand" href="#">
-            <i class="fa-solid fa-earth"></i>
-            <span>Mundo de los Hongos</span>
+            <i class="fa-solid fa-earth"></i><!--Logo--> 
+            <span>Mundo de los Hongos</span><!--Nombre-->
           </a>
         </div>          
             <p>
-              <a id="btncolapse" class="btn btn-light" data-toggle="collapse" href="#colapso1" role="button" aria-expanded="true" aria-controls="collapseExample">☰</a>
+                        <!--Boton ☰-->
+              <a id="btncolapse" class="btn btn-light" data-toggle="collapse" href="#listamenu" role="button" aria-expanded="true" aria-controls="listamenu">☰</a>
             </p>            
-            
-            <div id="colapso1" class="collapse show">
-            <nav>
+                         <!--Lista del menu-->
+            <div id="listamenu" class="collapse show">
+                <nav>
                   <ul class="nav-list">
                   <li><a href="./index.html">Inicio</a></li>
                   <li><a href="#footer-contacto">Acerca de</a></li>
                   <li><a href="#">Codo a codo</a></li>
                   <li><a href="#footer-contacto">Contacto</a></li>
-                  </ul>
+                  </ul>               
                 </nav>
             </div>
     </div>
-  </div>
+</div>
 
-
-  <main>
-    <div id="container-home" class="container">
-      <!-- Contenido -->
+<main>
+<div id="container-home" class="container">
+      <!-- Contenido: tarjetas en filas hasta 3 columnas. 1 columna cuando la ventana se minimiza. -->
       <div class="row row-cols-1 row-cols-md-3">
       
-        <div class="col md-4 mb-3 ">
-        <div class="card h-100">
-                      <div class="card-header">
+        <div class="col md-4 mb-3 "> <!--se divide la fila en tres tarjetas dispersada con md 4 cada una, y md(margin-bootom de 3%)-->
+              <!--tarjeta 1-->
+          <div class="card h-100"> <!--altura de la tarjeta de 100%-->
+
+                      <!--La tarjeta se compone de titulo, cuerpo(con imagen y texto) y un boton en el pie-->
+                      <!--misma representacion para el resto de las tarjetas-->
+                      <div class="card-header"> 
                           Amanita muscaria
                       </div>
                       <img class="card-img-top" src="https://as1.ftcdn.net/v2/jpg/03/92/64/62/1000_F_392646231_BlaDW03QFHkSjNR79J1wf3Onpwyqw3Vx.jpg"  alt="...">
@@ -56,9 +61,8 @@
         </div>
         </div>
 
-
         <div class="col md-4 mb-3">
-          <div class="card h-100">
+          <div class="card h-100"> <!--tarjeta 2-->
                           <div class="card-header">
                               Clitocybe odora 
                           </div>
@@ -73,14 +77,13 @@
         </div>
 
         <div class="col md-4 mb-3">
-          <div class="card h-100">
+          <div class="card h-100"><!--tarjeta 3-->
                           <div class="card-header">
                             Amanita phalloides 
                           </div>
                           <img class="card-img-top" src="https://as2.ftcdn.net/v2/jpg/03/19/31/27/1000_F_319312769_2KcbBQ8O5gh03eoIwpEIGvQcI86PZNSR.jpg" alt="...">
                           <div class="card-body">       
                             <p class="card-text">Conocida como hongo de la muerte, es muy parecido a algunas especies que son comestibles, por lo que se han dado casos de envenenamiento accidental.</p>
-                          
                           </div>
                           <div class="card-footer">
                             <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#ModalAmanitaPhalloides"data-button="Shiitake"> Ver mas info</a>
@@ -89,7 +92,7 @@
         </div>
 
         <div class="col md-4 mb-3">
-          <div class="card h-100">
+          <div class="card h-100"><!--tarjeta 4-->
                           <div class="card-header">
                             Cortinarius violaceus
                           </div>
@@ -100,20 +103,15 @@
                           <div class="card-footer">
                             <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#ModalCortinarius"data-button="Cortinarius"> Ver mas info</a>
                         </div>
-        </div>
-        </div>
-  
-          
-          
-        
+          </div>
+        </div>        
       </div>
-    </div>
+</div>
   
 
- 
-
- <!-- primer modal -->
-
+<!-- primer modal -->
+<!--Se muestra titulo, video, texto, texto en listas-->
+<!--misma representacion para los otros modales-->
  <div class="modal fade" id="ModalAmanitaMuscaria" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -135,13 +133,11 @@
                </li>
               <li><b>Laminas</b>: Son blancas y están dispuestas radialmente desde el centro del sombrero hacia afuera. </li>
           </ul>  
-        <h4>Historia</h4><p> Es conocida por diversas culturas alrededor del mundo, especialmente en áreas donde crece de forma natural, 
+          <h4>Historia</h4><p> Es conocida por diversas culturas alrededor del mundo, especialmente en áreas donde crece de forma natural, 
           como Europa, Asia y América del Norte. Es conocido por sus propiedades psicoactivas y ha sido utilizado en rituales religiosos, 
           chamanismo y tradiciones folclóricas. Sin embargo, es importante tener en cuenta que Amanita muscaria es tóxico y puede ser 
           peligroso si se consume en grandes cantidades.
-        </p>
-        </p>
-        </p>
+          </p>        
       </div>
       
       <div class="modal-footer">
@@ -183,9 +179,7 @@
           la recolección y la cocina en algunas regiones. Sin embargo, como con todos los hongos, es importante recolectarlos con precaución y 
           solo si se tiene certeza de su identificación.
         </p>
-      
-      
-  </div>
+      </div>
       
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -224,13 +218,7 @@
               pueden causar daño hepático grave e incluso la muerte si se consume. Es responsable de la mayoría de las intoxicaciones por hongos mortales 
               en todo el mundo. A pesar de su peligrosidad, Amanita phalloides es a menudo confundida con otras setas comestibles, lo que lleva a accidentes graves. 
               sSe encuentra en bosques de coníferas y de hoja caduca en Europa, Asia y América del Norte.
-
-
-
-
-            </p>
-          
-          
+              </p>
       </div>
       
       <div class="modal-footer">
@@ -265,17 +253,8 @@
                   <li><b>Laminas</b>: pueden ser un poco más claras que el sombrero y el pie, pero mantienen la tonalidad morada.</li>
               </ul>                
             <h4>Historia:</h4>
-            <p class="textsangria">El cultivo del champiñón nació en Francia aproximadamente a principios del siglo XX
-            (de ahí su nombre Seta de París). Precisamente, fueron los campesinos franceses los
-            primeros en cultivar —con espectacular éxito— los micelios de este hongo,sembrándolos
-            encima de estiércol de caballo, en cavas, sótanos, bodegas, etc.; es decir, en lugares
-            oscuros y húmedos, que estuvieran a una temperatura que no se alejara de los ideales
-            12-18ºC. De Francia pasó a los países vecinos y posteriormente a América.</p>
-        </div>
-
-
-
-
+            <p class="textsangria">.............................</p>
+      </div>
 
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -286,8 +265,7 @@
 </main>
 
   
-
-  <footer id="footer-contacto" class="mt-5 text-center">
+<footer id="footer-contacto" class="mt-5 text-center">
     <!-- Pie de página aquí -->
     <p>Equipo 15 - Comisión 24109 - Codo A Codo</p>
         <p>Maxi</p>
@@ -296,16 +274,11 @@
         <p>Ari</p>
         <p>Tubi</p>
     <p>Contacto: info@mundo-hongos.com</p>
-  </footer>
+</footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
-  
- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-
-
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>

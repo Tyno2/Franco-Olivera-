@@ -4,26 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mundo de los Hongos</title>
+  <script src="https://kit.fontawesome.com/34242d1290.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/estilocomestibles.css">
-  
-
 </head>
 <body>
 
-   <!--Encabezado-->
-   <div class="nav-bar">
+   <!--Encabezado con un logo de forma de tierra,nombre, boton ☰ y una lista[Inicio-Acerca de-Codo a codo- Contacto]-->
+<div class="nav-bar">
     <div class="nav-container">
         <div class="brand">
           <a class="navbar-brand" href="#">
-            <i class="fa-solid fa-earth"></i>
-            <span>Mundo de los Hongos</span>
+            <i class="fa-solid fa-earth"></i><!--Logo-->
+            <span>Mundo de los Hongos</span><!--Nombre-->
           </a>
         </div>          
-            <p>
+            <p> 
+                    <!--Boton ☰-->
               <a id="btncolapse" class="btn btn-light" data-toggle="collapse" href="#colapso1" role="button" aria-expanded="true" aria-controls="collapseExample">☰</a>
             </p>            
-            
+                    <!--Lista del menu-->          
             <div id="colapso1" class="collapse show">
             <nav>
                   <ul class="nav-list">
@@ -35,16 +35,19 @@
                 </nav>
             </div>
     </div>
-  </div>
+</div>
 
-  <main>
-    <div id="container-home" class="container">
-      <!-- Contenido -->
-      <div class="row row-cols-1 row-cols-md-3">
-                
+<main>
+<div id="container-home" class="container">
+      <!-- Contenido: tarjetas en filas hasta 3 columnas. 1 columna cuando la ventana se minimiza. -->
+      <div class="row row-cols-1 row-cols-md-3">              
             
-          <div class="col md-4 mb-3">
-          <div id="card01" class="card h-100">
+          <div class="col md-4 mb-3"><!--se divide la fila del container para poner tres tarjetas dispersada con 4% cada una, y md(margin-bootom de 3%) y el resto de las tarjetas se acomodan hacia abajo-->
+                  <!--tarjeta 1-->
+            <div id="card01" class="card h-100">    <!--altura de la tarjeta de 100%-->
+                        
+                        <!--La tarjeta se compone de titulo, cuerpo(con imagen y texto) y un boton en el pie-->
+                        <!--misma representacion para las demas tarjetas-->
                         <div class="card-header">
                           Portobello
                         </div>
@@ -59,15 +62,14 @@
           </div>
           </div>
           
-  
           <div class="col md-4 mb-3">
-            <div class="card h-100">
+            <div class="card h-100"> <!--tarjeta 2-->
                             <div class="card-header">
-                              Cremini
+                              Russula vesca
                             </div>
-                            <img src="./assets/img/cremini.jpg" class="card-img-top" alt="...">
+                            <img src="https://as1.ftcdn.net/v2/jpg/03/66/35/04/1000_F_366350440_HWm8jQKlaTA8XaocZfBsZMic1rzUTWXa.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <p class="card-text"> Similar al champiñón blanco, pero más oscuro y de sabor más intenso. También se le conoce como "champiñón marrón".</p>
+                              <p class="card-text">Tiene sombrero de color que va desde el rojo a naranja y láminas y pie blanco. Es comestible, aunque a veces puede ser confundida con especies venenosas.</p>
                             </div>
                             <div class="card-footer">
                               <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#ModalCremini"data-button="Cremini"> Ver mas info</a>
@@ -76,11 +78,11 @@
           </div>
   
           <div class="col md-4 mb-3">
-            <div class="card h-100">
+            <div class="card h-100"> <!--tarjeta 3-->
                             <div class="card-header">
                               Shiitake
                             </div>
-                            <img src="./assets/img/shiitake.jpg" class="card-img-top" alt="...">
+                            <img src="https://cdn.pixabay.com/photo/2020/02/10/12/01/wild-shiitake-mushroom-4836310_1280.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <p class="card-text">Posee un sombrero grande y carnoso, de color marrón oscuro.</p>
                             </div>
@@ -89,10 +91,9 @@
                           </div>
           </div>
           </div>
-  
-  
+
           <div class="col md-4 mb-3">
-            <div class="card h-100">                
+            <div class="card h-100">   <!--tarjeta 4-->             
                               <div class="card-header">
                                   Champiniones 
                               </div>
@@ -103,27 +104,43 @@
                             <div class="card-footer">
                               <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#ModalChampinion"data-button="Champiñón"> Ver mas info</a>
                           </div>
+            </div>
           </div>
-          </div>
-        
       </div>
-    </div>
+</div>
   
 
- 
-
- <!-- primer modal -->
-
+<!-- primer modal -->
+<!--Se muestra titulo, video, texto, texto en listas-->
+<!--misma representacion para los otros modales-->
  <div class="modal fade" id="ModalPortobello" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
 
+      
+      
       <div class="modal-header">
-        <h5 class="modal-title" id="modalTitle">Portobello</h5>
+        <h5 class="modal-title" id="modalTitle">Portobello</h5>          
       </div>
       
-      <div class="modal-body">
-            <p id="modalContent">Contenido de Portobello.</p>
+      <div class="modal-body"> 
+        <p id="modalContent">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nZrrPeWWCOQ?si=ZoXB8LWbquun8WeN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        <h4>Familia:</h4>
+        <ul>
+            <li>......</li>                  
+        </ul>
+        <h4>Formado por:</h4>
+          <ul>
+              <li><b>Sombrero</b>:.....................</li>
+              <li><b>Pie</b>: .....................
+               </li>
+              <li><b>Laminas</b>: .................. 
+              </li>
+          </ul>  
+        <h4>Historia</h4><p>
+         ............................................
+         </p>          
       </div>
       
       <div class="modal-footer">
@@ -141,11 +158,28 @@
     <div class="modal-content">
       
       <div class="modal-header">
-        <h5 class="modal-title" id="modalTitle">Cremini</h5>          
+        <h5 class="modal-title" id="modalTitle">Russula vesca</h5>          
       </div>
       
-      <div class="modal-body">
-          <p id="modalContent">Contenido de cremini...</p>
+      <div class="modal-body"> 
+        <p id="modalContent">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nZrrPeWWCOQ?si=ZoXB8LWbquun8WeN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        <h4>Familia:</h4>
+        <ul>
+            <li>Russulaceae</li>                  
+        </ul>
+        <h4>Formado por:</h4>
+          <ul>
+              <li><b>Sombrero</b>: de forma convexa, con color que varia desde rojo a hasta naranja.</li>
+              <li><b>Pie</b>: es cilindrico y blanco.
+               </li>
+              <li><b>Laminas</b>: son de un blanco puro y brillante. Esta característica es distintiva y ayuda a diferenciarla de otras especies de Russula. 
+              </li>
+          </ul>  
+        <h4>Historia</h4><p>
+          Russula vesca ha sido recolectada por generaciones en muchas partes del mundo donde crece, como Europa, América del Norte y Asia. 
+          Ha sido valorada por su buen sabor y su potencial culinario.
+         </p>          
       </div>
       
       <div class="modal-footer">
@@ -182,9 +216,7 @@
             Se cree que su cultivo se remonta a más de mil años en China, donde inicialmente crecía de forma silvestre en bosques de robles y otros árboles de madera dura.             
             Es el hongo de especialidad más popular en todo el mundo. En los países asiáticos es un alimento tradicional, exquisito y
             altamente valorado por su valor nutritivo, exquisito sabor y aroma seductor, y especialmente por sus beneficios medicinales.
-            </p>
-          </p>
-          </p>
+            </p>          
       </div>
       
       <div class="modal-footer">
@@ -227,18 +259,15 @@
             12-18ºC. De Francia pasó a los países vecinos y posteriormente a América.</p>
         </div>
 
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-      </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
     </div>
   </div>
 </div>
 </main>
 
-  
-
-  <footer id="footer-contacto" class="mt-5 text-center">
-    <!-- Pie de página aquí -->
+<footer id="footer-contacto" class="mt-5 text-center">    <!-- Pie de página con texto-->
     <p>Equipo 15 - Comisión 24109 - Codo A Codo</p>
         <p>Maxi</p>
         <p>Tyno</p>
@@ -246,11 +275,11 @@
         <p>Ari</p>
         <p>Tubi</p>
     <p>Contacto: info@mundo-hongos.com</p>
-  </footer>
+</footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
-  </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
 </html>
