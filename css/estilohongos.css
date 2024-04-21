@@ -96,15 +96,20 @@ nav ul li ul li a{
 } 
 
 
-@media (min-width: 500px){
+@media (min-width: 768px){
   #btncolapse{
     display: none;
   }
+
+  #listamenu{
+    display: block;
+  }
+
 }
 
 
 
-@media (max-width: 500px){
+@media (max-width: 768px){
   .nav-container{
     display: inline-block;
     justify-content: flex-start;
