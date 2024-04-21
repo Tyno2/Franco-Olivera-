@@ -9,21 +9,31 @@
  
 </head>
 <body>
-  <header>
-    <!-- Encabezado -->
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
-        <i class="fa-solid fa-earth"></i>
-        <span>Mundo de los Hongos</span>
-      </a>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#footer-contacto">Contacto</a></li>
-        <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
-      </ul>
-    </nav>
-  </header>
-
+  <!--Encabezado-->
+  <div class="nav-bar">
+    <div class="nav-container">
+        <div class="brand">
+          <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-earth"></i>
+            <span>Mundo de los Hongos</span>
+          </a>
+        </div>          
+            <p>
+              <a id="btncolapse" class="btn btn-light" data-toggle="collapse" href="#colapso1" role="button" aria-expanded="true" aria-controls="collapseExample">☰</a>
+            </p>            
+            
+            <div id="colapso1" class="collapse show">
+            <nav>
+                  <ul class="nav-list">
+                  <li><a href="./index.html">Inicio</a></li>
+                  <li><a href="#footer-contacto">Acerca de</a></li>
+                  <li><a href="#">Codo a codo</a></li>
+                  <li><a href="#footer-contacto">Contacto</a></li>
+                  </ul>
+                </nav>
+            </div>
+    </div>
+  </div>
 
 
   <main>
@@ -33,13 +43,15 @@
       
         <div class="col md-4 mb-3 ">
         <div class="card h-100">
-                      <img class="card-img-top" src="./assets/img/amanitamuscaria.jpg"  alt="...">
+                      <div class="card-header">
+                          Amanita muscaria
+                      </div>
+                      <img class="card-img-top" src="https://as1.ftcdn.net/v2/jpg/03/92/64/62/1000_F_392646231_BlaDW03QFHkSjNR79J1wf3Onpwyqw3Vx.jpg"  alt="...">
                       <div class="card-body"> 
-                        <h5 class="card-title">Amanita muscaria</h5> 
                         <p class="card-text">Es reconocido por su sombrero rojo con manchas blancas y su tallo blanco tiene un anillo de gran tamaño.</p>
                       </div>
                       <div class="card-footer">
-                      <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#ModalAmanita"> Ver mas info</a>
+                      <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#ModalAmanitaMuscaria"> Ver mas info</a>
                     </div>
         </div>
         </div>
@@ -47,39 +59,46 @@
 
         <div class="col md-4 mb-3">
           <div class="card h-100">
-                          <img class="card-img-top"src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Mutterkorn_090719.jpg"  alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Cornezuelo de centeno</h5> 
-                            <p class="card-text">Crece sobre diversos granos y cereales.</p>
+                          <div class="card-header">
+                              Clitocybe odora 
                           </div>
-                          <div class="card-footer">
-                            <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#ModalCornezuelo"data-button="Cremini"> Ver mas info</a>
-                        </div>
-        </div>
-        </div>
-
-        <div class="col md-4 mb-3">
-          <div class="card h-100">
                           <img class="card-img-top" src="https://as1.ftcdn.net/v2/jpg/01/41/82/44/1000_F_141824484_0BXyG6tv9JTn4bp9sK2Q7eb3rmhAbrBS.jpg" alt="...">
-                          <div class="card-body">       
-                            <h5 class="card-title">Clitocybe odora</h5>
+                          <div class="card-body">
                             <p class="card-text">Es apreciado por su sabor agradable y su aroma distintivo al anís.</p>
                           </div>
                           <div class="card-footer">
-                            <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#ModalClitocybe"data-button="Shiitake"> Ver mas info</a>
+                            <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#ModalClitocybeOdora"data-button="Cremini"> Ver mas info</a>
                         </div>
         </div>
         </div>
 
         <div class="col md-4 mb-3">
           <div class="card h-100">
+                          <div class="card-header">
+                            Amanita phalloides 
+                          </div>
+                          <img class="card-img-top" src="https://as2.ftcdn.net/v2/jpg/03/19/31/27/1000_F_319312769_2KcbBQ8O5gh03eoIwpEIGvQcI86PZNSR.jpg" alt="...">
+                          <div class="card-body">       
+                            <p class="card-text">Conocida como hongo de la muerte, es muy parecido a algunas especies que son comestibles, por lo que se han dado casos de envenenamiento accidental.</p>
+                          
+                          </div>
+                          <div class="card-footer">
+                            <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#ModalAmanitaPhalloides"data-button="Shiitake"> Ver mas info</a>
+                        </div>
+        </div>
+        </div>
+
+        <div class="col md-4 mb-3">
+          <div class="card h-100">
+                          <div class="card-header">
+                            Cortinarius violaceus
+                          </div>
                           <img class="card-img-top" src="https://as1.ftcdn.net/v2/jpg/06/34/80/84/1000_F_634808453_zUzG4cL4JsjQBK8IRit2snzmYpbLqqiR.jpg"  alt="...">
                           <div class="card-body">
-                            <h5 class="card-title">Cortinarius violaceus</h5> 
                             <p class="card-text">Se caracteriza por su sombrero de color púrpura oscuro a violeta, que puede medir entre 5 y 15 centímetros de diámetro, y tiene una forma convexa que puede volverse aplanada.</p>
                           </div>
                           <div class="card-footer">
-                            <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#ModalCornezuelo"data-button="Cremini"> Ver mas info</a>
+                            <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#ModalCortinarius"data-button="Cortinarius"> Ver mas info</a>
                         </div>
         </div>
         </div>
@@ -95,16 +114,34 @@
 
  <!-- primer modal -->
 
- <div class="modal fade" id="ModalPortobello" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="modal fade" id="ModalAmanitaMuscaria" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
 
       <div class="modal-header">
-        <h5 class="modal-title" id="modalTitle">Portobello</h5>
+        <h5 class="modal-title" id="modalTitle">Amanita muscaria</h5>
       </div>
       
-      <div class="modal-body">
-            <p id="modalContent">Contenido de Portobello.</p>
+      <div class="modal-body"> 
+        <p id="modalContent"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/PKbOcmVY_Qo?si=p1KcXllMlm5UyuL-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        <h4>Familia:</h4>
+        <ul>
+            <li>..........</li>                  
+        </ul>
+        <h4>Formado por:</h4>
+          <ul>
+              <li><b>Sombrero</b>:...........</li>
+              <li><b>Pie</b>: ...........
+               </li>
+              <li><b>Laminas</b>: ............ 
+              </li>
+          </ul>  
+        <h4>Historia</h4><p>
+        .........................
+        
+        </p>
+        </p>
+        </p>
       </div>
       
       <div class="modal-footer">
@@ -117,17 +154,34 @@
 
 <!-- segundo modal -->
 
-<div class="modal fade" id="ModalCremini" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="ModalClitocybeOdora" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       
       <div class="modal-header">
-        <h5 class="modal-title" id="modalTitle">Cremini</h5>          
+        <h5 class="modal-title" id="modalTitle">Clitocybe odora</h5>          
       </div>
       
-      <div class="modal-body">
-          <p id="modalContent">Contenido de cremini...</p>
-      </div>
+      <div class="modal-body"> 
+        <p id="modalContent"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/PKbOcmVY_Qo?si=p1KcXllMlm5UyuL-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        <h4>Familia:</h4>
+        <ul>
+            <li>..........</li>                  
+        </ul>
+        <h4>Formado por:</h4>
+          <ul>
+              <li><b>Sombrero</b>:...........</li>
+              <li><b>Pie</b>: ...........
+               </li>
+              <li><b>Laminas</b>: ............ 
+              </li>
+          </ul>  
+        <h4>Historia</h4><p>
+        .........................
+        </p>
+      
+      
+  </div>
       
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -137,35 +191,33 @@
 </div>
 
 <!-- tercer modal -->
-<div class="modal fade" id="ModalShiitake" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="ModalAmanitaPhalloides" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       
       <div class="modal-header">
-        <h5 class="modal-title" id="modalTitle">Shiitake</h5>         
+        <h5 class="modal-title" id="modalTitle">Amanita phalloides</h5>         
       </div>
 
       <div class="modal-body"> 
-            <p id="modalContent"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/oEuiFqYEfGk?si=c8LfraJH--eHo0-S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+            <p id="modalContent"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/PKbOcmVY_Qo?si=p1KcXllMlm5UyuL-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
             <h4>Familia:</h4>
             <ul>
-                <li>Lentinula</li>                  
+                <li>..........</li>                  
             </ul>
             <h4>Formado por:</h4>
               <ul>
-                  <li><b>Sombrero</b>: de forma convexa, con color que puede variar desde tonos claros de marrón hasta tonos más oscuros.</li>
-                  <li><b>Pie</b>: generalmente más largo que ancho.
+                  <li><b>Sombrero</b>:...........</li>
+                  <li><b>Pie</b>: ...........
                    </li>
-                  <li><b>Laminas</b>: son de estructuras delgadas y planas. Son blancas cuando el hongo es joven y pueden volverse más oscuras con la edad. 
+                  <li><b>Laminas</b>: ............ 
                   </li>
               </ul>  
             <h4>Historia</h4><p>
-            Se cree que su cultivo se remonta a más de mil años en China, donde inicialmente crecía de forma silvestre en bosques de robles y otros árboles de madera dura.             
-            Es el hongo de especialidad más popular en todo el mundo. En los países asiáticos es un alimento tradicional, exquisito y
-            altamente valorado por su valor nutritivo, exquisito sabor y aroma seductor, y especialmente por sus beneficios medicinales.
+            .........................
             </p>
-          </p>
-          </p>
+          
+          
       </div>
       
       <div class="modal-footer">
@@ -176,28 +228,28 @@
 </div>
 
 <!-- cuarto modal -->
-<div class="modal fade" id="ModalChampinion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="ModalCortinarius" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
 
       <div class="modal-header">
-        <h5 class="modal-title" id="modalTitle">Champiñion</h5>
+        <h5 class="modal-title" id="modalTitle">Cortinarius violaceus</h5>
       </div>
       
       <div class="modal-body">
           <p id="modalContent">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ztnivcuec-A?si=B42gKXJ2S-6_ZWoq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PKbOcmVY_Qo?si=p1KcXllMlm5UyuL-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </p>
           <h4>Familia:</h4>
             <ul>
-                <li>Agaricaceas</li>                  
+                <li>Cortinarius</li>                  
             </ul>
           <h4>Formado por:</h4>
               <ul>
-                  <li><b>Sombrero</b>: de color blanco y de forma convexa a aplanada, que es la parte más carnosa del hongo.</li>
-                  <li><b>Pie</b>: con anillo de color blanco.
+                  <li><b>Sombrero</b>: de diámetro de entre 5 y 15 centímetros, de forma convexa que se vuelve plano o algo concavo en el centro. De color purpura o violeta oscuro.</li>
+                  <li><b>Pie</b>: tiene una forma ligeramente ensanchada en la base.
                    </li>
-                  <li><b>Laminas</b>: generalmente son blancas cuando el champiñón es joven, se vuelven más oscuras a medida que madura, adoptando tonalidades que van desde el gris claro hasta el negro, dependiendo de la especie.</li>
+                  <li><b>Laminas</b>: pueden ser un poco más claras que el sombrero y el pie, pero mantienen la tonalidad morada.</li>
               </ul>                
             <h4>Historia:</h4>
             <p class="textsangria">El cultivo del champiñón nació en Francia aproximadamente a principios del siglo XX
@@ -207,6 +259,10 @@
             oscuros y húmedos, que estuvieran a una temperatura que no se alejara de los ideales
             12-18ºC. De Francia pasó a los países vecinos y posteriormente a América.</p>
         </div>
+
+
+
+
 
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>

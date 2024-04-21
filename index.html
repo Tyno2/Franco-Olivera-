@@ -9,20 +9,35 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <header>
-    <!-- Encabezado -->
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
-        <i class="fa-solid fa-earth"></i>
-        <span>Mundo de los Hongos</span>
-      </a>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-        <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
-      </ul>
-    </nav>
-  </header>
+
+  <!--Encabezado-->
+  <div class="nav-bar">
+    <div class="nav-container">
+        <div class="brand">
+          <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-earth"></i>
+            <span>Mundo de los Hongos</span>
+          </a>
+        </div>          
+            <p>
+              <a id="btncolapse" class="btn btn-light" data-toggle="collapse" href="#colapso1" role="button" aria-expanded="true" aria-controls="collapseExample">☰</a>
+            </p>            
+            
+            <div id="colapso1" class="collapse show">
+            <nav>
+                  <ul class="nav-list">
+                  <li><a href="./index.html">Inicio</a></li>
+                  <li><a href="#footer-contacto">Acerca de</a></li>
+                  <li><a href="#">Codo a codo</a></li>
+                  <li><a href="#footer-contacto">Contacto</a></li>
+                  </ul>
+                </nav>
+            </div>
+    </div>
+  </div>
+
+
+
 
   <div id="container-home" class="container mt-5">
     <!-- Contenido -->
