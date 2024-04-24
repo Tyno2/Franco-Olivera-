@@ -1,0 +1,350 @@
+@import "compass/css3";
+ *, *:before, *:after {
+	 box-sizing: border-box;
+}
+ html {
+	 overflow-y: scroll;
+}
+ body {
+	 background: #c1bdba;
+	 font-family: 'Titillium Web', sans-serif;
+}
+ a {
+	 text-decoration: none;
+	 color: #1ab188;
+	 transition: 0.5s ease;
+}
+ a:hover {
+	 color: #179b77;
+}
+ .form {
+	 background: rgba(19, 35, 47, .9);
+	 padding: 40px;
+	 max-width: 600px;
+	 margin: 40px auto;
+	 border-radius: 4px;
+	 box-shadow: 0 4px 10px 4px rgba(19, 35, 47, .3);
+}
+ .tab-group {
+	 list-style: none;
+	 padding: 0;
+	 margin: 0 0 40px 0;
+}
+ .tab-group:after {
+	 content: "";
+	 display: table;
+	 clear: both;
+}
+ .tab-group li a {
+	 display: block;
+	 text-decoration: none;
+	 padding: 15px;
+	 background: rgba(160, 179, 176, .25);
+	 color: #a0b3b0;
+	 font-size: 20px;
+	 float: left;
+	 width: 50%;
+	 text-align: center;
+	 cursor: pointer;
+	 transition: 0.5s ease;
+}
+ .tab-group li a:hover {
+	 background: #179b77;
+	 color: #fff;
+}
+ .tab-group .active a {
+	 background: #1ab188;
+	 color: #fff;
+}
+ .tab-content > div:last-child {
+	 display: none;
+}
+ h1 {
+	 text-align: center;
+	 color: #fff;
+	 font-weight: 300;
+	 margin: 0 0 40px;
+}
+ label {
+	 position: absolute;
+	 transform: translateY(6px);
+	 left: 13px;
+	 color: rgba(255, 255, 255, .5);
+	 transition: all 0.25s ease;
+	 -webkit-backface-visibility: hidden;
+	 pointer-events: none;
+	 font-size: 22px;
+}
+ label .req {
+	 margin: 2px;
+	 color: #1ab188;
+}
+ label.active {
+	 transform: translateY(50px);
+	 left: 2px;
+	 font-size: 14px;
+}
+ label.active .req {
+	 opacity: 0;
+}
+ label.highlight {
+	 color: #fff;
+}
+ input, textarea {
+	 font-size: 22px;
+	 display: block;
+	 width: 100%;
+	 height: 100%;
+	 padding: 5px 10px;
+	 background: none;
+	 background-image: none;
+	 border: 1px solid #a0b3b0;
+	 color: #fff;
+	 border-radius: 0;
+	 transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+ input:focus, textarea:focus {
+	 outline: 0;
+	 border-color: #1ab188;
+}
+ textarea {
+	 border: 2px solid #a0b3b0;
+	 resize: vertical;
+}
+ .field-wrap {
+	 position: relative;
+	 margin-bottom: 40px;
+}
+ .top-row:after {
+	 content: "";
+	 display: table;
+	 clear: both;
+}
+ .top-row > div {
+	 float: left;
+	 width: 48%;
+	 margin-right: 4%;
+}
+ .top-row > div:last-child {
+	 margin: 0;
+}
+ .button {
+	 border: 0;
+	 outline: none;
+	 border-radius: 0;
+	 padding: 15px 0;
+	 font-size: 2rem;
+	 font-weight: 600;
+	 text-transform: uppercase;
+	 letter-spacing: 0.1em;
+	 background: #1ab188;
+	 color: #fff;
+	 transition: all 0.5s ease;
+	 -webkit-appearance: none;
+}
+ .button:hover, .button:focus {
+	 background: #179b77;
+}
+ .button-block {
+	 display: block;
+	 width: 100%;
+}
+ .forgot {
+	 margin-top: -20px;
+	 text-align: right;
+}
+
+
+
+
+body {
+    background-color: #f8f9fa; /* Color de fondo claro */
+  }
+  
+  header {
+    margin-bottom: 50px;
+  }
+  
+  footer {
+    background-color: #343a40; /*Color oscuro para el pie de página */
+    color: white;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Segoe UI;
+}
+
+.nav-bar{
+    height: 70px;
+    background: #343a40;
+}
+
+.brand{
+    float: left;
+    position: absolute;
+    padding-left: 20px;
+    line-height: 70px;
+    font-size: 1.5em;
+}
+
+.brand a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    float: left;
+    position: relative;
+}
+
+nav ul li a{
+    display: block;
+    padding: 0 20px;
+    line-height: 70px;
+    background: #343a40;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover{
+    background: #2ab1ce;
+    color: #fff;
+}
+
+nav ul li a:not(:only-child):after{
+    content: '▼';
+    padding-left: 5px;
+}
+
+nav ul li ul li {
+    min-width: 190px;
+}
+
+nav ul li ul li a{
+    padding: 15px;
+    line-height: 20px;
+}
+
+.nav-dropdown{
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+
+.nav-mobile{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 70px;
+    width: 70px;
+}
+
+#nav-toggle{
+    position: absolute;
+    left: 18px;
+    top: 22px;
+    cursor: pointer;
+    padding: 10px 35px 15px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span::before,
+#nav-toggle span::after{
+    position: absolute;
+    display: block;
+    content: '';
+    background: #fff;
+    height: 5px;
+    width: 35px;
+    transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span::before{
+    top: -10px;
+}
+
+#nav-toggle span::after{
+    bottom: -10px;
+}
+
+#nav-toggle.active span{
+    background-color: transparent;
+}
+
+#nav-toggle.active span::before, #nav-toggle.active span::after{
+    top: 0;
+}
+
+#nav-toggle.active span::before{
+    transform: rotate(45deg);
+}
+
+#nav-toggle.active span::after{
+    transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 768px) {
+
+    .nav-mobile{
+        display: block;
+    }
+
+    nav{
+        width: 100%;
+        padding: 70px 0 15px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav ul li {
+        float: none;
+    }
+
+    nav ul li a{
+        padding: 15px;
+        line-height: 20px;
+        padding-left: 25%;
+    }
+
+
+    nav ul li ul li a{
+        padding-left: 30%;
+    }
+
+    .nav-dropdown{
+        position: static;
+    }
+}
+
+@media screen and (min-width: 799px){
+    .nav-list{
+        display: block !important;
+    }
+}

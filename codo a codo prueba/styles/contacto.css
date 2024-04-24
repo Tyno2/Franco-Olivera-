@@ -1,0 +1,359 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #e2dedb;
+  color: #b3aca7;
+}
+
+header {
+  position: relative;
+  margin: 100px 0 25px 0;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: #726659;
+  
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  
+  border: solid 1px #b3aca7;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 470px;
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}
+body {
+    background-color: #f8f9fa; /* Color de fondo claro */
+  }
+  
+  header {
+    margin-bottom: 50px;
+  }
+  
+  footer {
+    background-color: #343a40; /*Color oscuro para el pie de página */
+    color: white;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Segoe UI;
+}
+
+.nav-bar{
+    height: 70px;
+    background: #343a40;
+}
+
+.brand{
+    float: left;
+    position: absolute;
+    padding-left: 20px;
+    line-height: 70px;
+    font-size: 1.5em;
+}
+
+.brand a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    float: left;
+    position: relative;
+}
+
+nav ul li a{
+    display: block;
+    padding: 0 20px;
+    line-height: 70px;
+    background: #343a40;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover{
+    background: #2ab1ce;
+    color: #fff;
+}
+
+nav ul li a:not(:only-child):after{
+    content: '▼';
+    padding-left: 5px;
+}
+
+nav ul li ul li {
+    min-width: 190px;
+}
+
+nav ul li ul li a{
+    padding: 15px;
+    line-height: 20px;
+}
+
+.nav-dropdown{
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+
+.nav-mobile{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 70px;
+    width: 70px;
+}
+
+#nav-toggle{
+    position: absolute;
+    left: 18px;
+    top: 22px;
+    cursor: pointer;
+    padding: 10px 35px 15px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span::before,
+#nav-toggle span::after{
+    position: absolute;
+    display: block;
+    content: '';
+    background: #fff;
+    height: 5px;
+    width: 35px;
+    transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span::before{
+    top: -10px;
+}
+
+#nav-toggle span::after{
+    bottom: -10px;
+}
+
+#nav-toggle.active span{
+    background-color: transparent;
+}
+
+#nav-toggle.active span::before, #nav-toggle.active span::after{
+    top: 0;
+}
+
+#nav-toggle.active span::before{
+    transform: rotate(45deg);
+}
+
+#nav-toggle.active span::after{
+    transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 768px) {
+
+    .nav-mobile{
+        display: block;
+    }
+
+    nav{
+        width: 100%;
+        padding: 70px 0 15px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav ul li {
+        float: none;
+    }
+
+    nav ul li a{
+        padding: 15px;
+        line-height: 20px;
+        padding-left: 25%;
+    }
+
+
+    nav ul li ul li a{
+        padding-left: 30%;
+    }
+
+    .nav-dropdown{
+        position: static;
+    }
+}
+
+@media screen and (min-width: 799px){
+    .nav-list{
+        display: block !important;
+    }
+}
