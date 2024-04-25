@@ -66,12 +66,13 @@
 	 margin: 0 0 40px;
 }
  label {
-	 position: absolute;
+	position: absolute;
 	 transform: translateY(6px);
 	 left: 13px;
 	 color: rgba(255, 255, 255, .5);
 	 transition: all 0.25s ease;
-	 -webkit-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	 pointer-events: none;
 	 font-size: 22px;
 }
@@ -140,7 +141,8 @@
 	 background: #1ab188;
 	 color: #fff;
 	 transition: all 0.5s ease;
-	 -webkit-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
 }
  .button:hover, .button:focus {
 	 background: #179b77;
