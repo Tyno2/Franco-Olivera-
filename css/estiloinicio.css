@@ -1,131 +1,114 @@
 body {
     background-color: #f8f9fa; /* Color de fondo claro */
 }
-  
-  header {
+
+header {
     margin-bottom: 50px;
-  }
+}
   
-  footer {
+footer {
     background-color: #343a40; /*Color oscuro para el pie de página */
     color: white;
     padding: 20px 0;
-  }
+}
   
-  footer p {
+footer p {
     margin-bottom: 0;
-  }
-
-  nav{
-    height: 70px;
-  }
-  
-  .nav-bar{
-    background-color: #343a40;
-
-  }
-
-  .nav-container{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-
-  }
-  
-  .brand a{
-  text-decoration: none;
-  color: white;
-  }
-
-  nav ul{
-  list-style: none;
-  }
-  
-  .nav-list{
-    background-color: #343a40;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-
-  }
-
-  nav ul li a{
-  display:block;
-  padding: 0 20px;
-  line-height: 70px;
-  background: #343a40;
-  text-decoration: none;
-  color: #fff;
-  }
-
-  nav ul li a:hover{
-  background: #2ab1ce;
-  color: #fff;
 }
 
+nav{
+    height: 70px;
+}
+  
+.nav-bar{
+    background-color: #343a40;
+}
 
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+  
+.brand a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul{
+    list-style: none;
+}
+  
+.nav-list{
+    background-color: #343a40;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+nav ul li a{
+    display:block;
+    padding: 0 20px;
+    line-height: 70px;
+    background: #343a40;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover{
+    background: #2ab1ce;
+    color: #fff;
+}
 
 nav ul li ul li {
-  min-width: 190px;
+    min-width: 190px;
 }
 
 nav ul li ul li a{
-  padding: 15px;
-  line-height: 20px;
+    padding: 15px;
+    line-height: 20px;
 }
 
 .navbar-toggler{
-  display: block;
-    
-} 
-
+    display: block;
+}
 
 @media (min-width: 768px){
-  #btncolapse{
-    display: none;
-  }
+    #btncolapse{
+        display: none;
+    }
 
-  #listamenu{
-    display: block;
-  }
-
+    #listamenu{
+        display: block;
+    }
 }
-
-
 
 @media (max-width: 768px){
-  .nav-container{
-    display: inline-block;
-    justify-content: flex-start;
-    flex-direction: column;
-    position: relative;
-  }
+    .nav-container{
+        display: inline-block;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: relative;
+    }
 
+    .nav-list{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        position: absolute;
+        left:0;
+        z-index: 1000;
+    }
 
-  .nav-list{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    position: absolute;
-    left:0;
-    z-index: 1000;
+    #btncolapse{
+        display: block;
+        cursor: pointer; 
+        width: 30px; 
+        height: 30px;
+    }
 
-  }
-  
-  #btncolapse{
-    display: block;
-    cursor: pointer; 
-    width: 30px; 
-    height: 30px;
-  }
-
-  
-  .navbar-toggler {
-  display: inline-block;
-  justify-content: flex-end;
-   }
-
-
-
+    .navbar-toggler {
+        display: inline-block;
+        justify-content: flex-end;
+    }
 }
-
