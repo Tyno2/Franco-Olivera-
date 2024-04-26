@@ -215,6 +215,8 @@ nav{
 
 .nav-bar{
     background-color: #343a40;
+    padding: 0 20px;
+    line-height: 70px;
 }
 
 .nav-container{
